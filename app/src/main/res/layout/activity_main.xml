@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Scanner Status -->
+    <TextView
+        android:id="@+id/tvScannerStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Scanner Connected"
+        android:textSize="18sp"
+        android:paddingBottom="8dp" />
+
+    <!-- Model Number -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvModelNumberLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model #: "
+            android:layout_weight="1"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etModelNumber"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Model #" />
+    </LinearLayout>
+
+    <!-- Name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/tvNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:layout_weight="1"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Name" />
+    </LinearLayout>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="16dp">
+
+        <Button
+            android:id="@+id/disable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DISABLE"
+            android:layout_marginEnd="8dp"
+            />
+
+        <Button
+            android:id="@+id/enable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENABLE"
+            android:layout_marginEnd="8dp"
+            />
+
+
+    </LinearLayout>
+
+    <!-- Scan Data -->
+    <TextView
+        android:id="@+id/tvScanDataLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan data"
+        android:textSize="16sp"
+        android:paddingTop="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/ScanData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f0f0f0"
+            android:padding="8dp"
+            android:text=""
+            android:textSize="14sp" />
+    </ScrollView>
+</LinearLayout>
