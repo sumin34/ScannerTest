@@ -96,19 +96,27 @@
         android:textSize="16sp"
         android:paddingTop="16dp" />
 
-    <ScrollView
+    <!--<ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="500dp"
         android:layout_weight="1"
         android:paddingTop="8dp">
 
         <TextView
             android:id="@+id/ScanData"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="200dp"
             android:background="#f0f0f0"
             android:padding="8dp"
             android:text=""
             android:textSize="14sp" />
-    </ScrollView>
+    </ScrollView>-->
+    <TextView
+        android:id="@+id/ScanData"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#f0f0f0"
+        android:padding="16dp"
+        android:text=""/>
 </LinearLayout>
